@@ -21,7 +21,7 @@ It writes a single PNG to the output path you provide.
 `pi-screenshot.ts` calls the script with:
 
 - Script path: `<extension-dir>/capture-active-display.swift`
-- Output path: `/tmp/pi-screenshot/latest.png`
+- Output path: `<os temp dir>/pi-screenshot/latest.png` (resolved via Node `os.tmpdir()`)
 
 ## Requirements
 
