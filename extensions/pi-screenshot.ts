@@ -66,9 +66,8 @@ export default function (pi: ExtensionAPI) {
     const screenshotContextBlock = [
       "",
       "[pi-screenshot extension]",
-      "A fresh screenshot was captured right before this user message from the monitor that currently contains the mouse pointer.",
       latestScreenshotPath ? `Screenshot path: ${latestScreenshotPath}` : `Screenshot path: ${LATEST_SCREENSHOT_PATH} (unavailable: capture failed).`,
-      "When the user asks about what is on screen, or their question is vague/ambiguous and visual context may help, use the read tool on the screenshot path to inspect it.",
+      "When the user asks about or references what is on their screen, use the read tool on the screenshot path to inspect it.",
       "",
     ].join("\n");
 
